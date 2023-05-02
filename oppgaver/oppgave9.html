@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/oppgave9.css"
+      media="screen"
+    />
+    <title>Oppgave 9</title>
+  </head>
+
+  <body>
+    <ul class="topnav">
+      <img
+        src="img/logo.png"
+        width="25px"
+        height="25px"
+        style="float: left; padding: 10px"
+      />
+      <!-- fjernet target="_blank  -->
+      <li class="midt"><a href="oppgave9.html">knapp1</a></li>
+      <li class="midt"><a href="#link2">knapp2</a></li>
+      <li class="midt"><a href="#link3">knapp3</a></li>
+
+      <!-- åpne kontakt modal popup -->
+      <li id="myBtn" class="right">
+        <a href="#kontakt">Kontakt oss</a>
+      </li>
+    </ul>
+
+    <div id="myModal" class="modal">
+      <!-- modal popup -->
+      <div class="modal-content">
+        <!-- kryss ut modal -->
+        <span class="close">&times;</span>
+        <div class="container">
+          <!-- input form -->
+          <form>
+            <div style="display: flex; margin: 20px">
+              <div class="boks">
+                <!-- input navn -->
+                <label
+                  for="fname"
+                  class="skrift_info"
+                  style="margin-right: 13px"
+                  >Navn</label
+                >
+                <input
+                  type="text"
+                  id="fname"
+                  name="navn"
+                  placeholder="skriv inn ditt navn"
+                />
+                <!-- input epost -->
+                <label for="email">Epost</label>
+                <input
+                  type="text"
+                  placeholder="Epost"
+                  name="epost"
+                  id="email"
+                />
+              </div>
+              <div class="boks">
+                <!-- input beskjed -->
+                <textarea
+                  id="tekst-beskjed"
+                  placeholder="Skriv din beskjed her"
+                  label="jkh"
+                  maxlength="100"
+                  style="resize: none"
+                >
+                </textarea>
+              </div>
+            </div>
+            <div>
+              <!-- send inn knapp -->
+              <button type="submit" class="btn" id="sendForm">Send inn</button>
+              <!-- avbryt knapp -->
+              <button type="button" id="avbryt">Avbryt</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="oppgave9.js"></script>
+  </body>
+</html>
+<!--  
+# Oppgave 9. 
+    
+    Lag en modal vindu til kontakt oss i navbaren.
+-	Når man trykker på denne knappen, så skal en modal komme frem.
+-	Den skal inneholde 3 felt.
+
+-	Navn.
+-	Epost.
+-	Beskjed.
+-	2 knapper.
+-	Avbryt
+-	Send
+
+-	Dersom man klikker send, så skal en alert komme frem som forteller at man har sendt skjemaet.
+-->

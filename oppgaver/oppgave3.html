@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+    .flex-horisontal {
+        display: flex;
+        /* flex-flow: row wrap; */
+        flex-direction: row;
+    }
+    .flex-vertikal {
+        display: flex;
+        flex-direction: column;
+    }
+    .kort {
+        display : table-cell;
+        padding: 10px;
+        box-shadow: 0 4px 0px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 20%;
+        border-radius: 10px;
+        
+
+    }
+    .kort:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .container {
+        padding: 2px 16px;  
+    }
+    .avatar {
+        width: 100%;
+    }
+    .overskrift {
+        text-align: center;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="flex-horisontal">
+        <div class="kort">
+            <h2 class="overskrift">Kort 1</h2>
+            <img src="img/person2.png" alt="Avatar" class="avatar">
+            <div class="container">
+            <h4><b>Person 2</b></h4>
+            <p>Elektriker</p>
+            </div>
+        </div>
+
+        <div class="kort">
+            <h2 class="overskrift">Kort 2</h2>
+            <img src="img/person3.png" alt="Avatar" class="avatar">
+            <div class="container">
+            <h4><b>Person 3</b></h4>
+            <p>Rørlegger</p>
+            </div>
+        </div>
+
+        <div class="kort">
+            <h2 class="overskrift">Kort 3</h2>
+            <img src="img/person4.png" alt="Avatar" class="avatar">
+            <div class="container">
+            <h4><b>Person 4</b></h4>
+            <p>Musiker</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-vertikal">
+        <div class="kort">
+            <h2 class="overskrift">Kort 4</h2>
+            <img src="img/person1.jpg" alt="Avatar" class="avatar">
+            <div class="container">
+            <h4><b>Person En</b></h4>
+            <p>Arkitekt og inginør</p>
+            </div>
+        </div>
+
+        <div class="kort">
+            <h2 class="overskrift">Kort 5</h2>
+            <img src="img/person5.png" alt="Avatar" class="avatar">
+            <div class="container">
+            <h4><b>Person 5</b></h4>
+            <p>Kokk</p>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>

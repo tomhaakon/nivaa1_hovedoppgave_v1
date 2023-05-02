@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 4</title>
+
+<!--  
+    # Oppgave 4. Lag en Navbar.
+-	Vil ha en logo til venstre.
+-	Ha 3 knapper i midten.
+-	Disse knappene skal lede åpne en ny tab, til en annen link.
+-	Det skal ligge en knapp helt til høyre, som heter kontakt oss.
+-	Navbaren skal alltid ligge på siden. Uansett hvor mye innhold den inneholder (Se position fixed).
+    */
+-->
+    <style>
+        
+        body {
+        text-align: center;
+        }
+
+        ul.topnav {
+            position: fixed;
+            width: 100%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.topnav li a:hover:not(.active) {background-color: #111;}
+        ul.topnav li a.active {background-color: #04AA6D;}
+        ul.topnav li.right {float: right;}
+        ul.topnav li.midt { display: inline-block; }
+      
+    </style>
+
+</head>
+<body>
+    
+        <ul class="topnav">
+        <img src="img/logo.png" width="25px" height="25px" style="float: left; padding: 10px;">
+        
+        <li class="midt"><a href="link1" target="_blank">knapp1</a></li>
+        <li class="midt"><a href="link2" target="_blank">knapp2</a></li>
+        <li class="midt"><a href="link3" target="_blank">knapp3</a></li>
+        
+        <li class="right"><a href="#kontakt">Kontakt oss</a></li>
+
+        </ul>
+   
+</body>    
+</html>
