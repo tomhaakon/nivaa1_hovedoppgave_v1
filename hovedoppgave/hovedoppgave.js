@@ -23,25 +23,21 @@ const knapp = document.querySelector("#send_beskjed");
 const modal = document.querySelector("#modal_beskjed");
 // hent span med classe avbryt for krysset
 const avbryt = document.getElementsByClassName("modal_avbryt")[0];
-
 // funksjon åpne block om knapp trykkes
 knapp.addEventListener("click", (e) => {
   e.preventDefault();
   modal.style.display = "block";
 });
-
 // når span knappen kryss trykkes, lukk modal display
 avbryt.addEventListener("click", () => {
   modal.style.display = "none";
 });
-
 // hvis man trykker utenfor boksen, steng display
 window.addEventListener("click", (e) => {
   if (e.target == modal) {
     modal.style.display = "none";
   }
 });
-
 /*##############################################################
 ################################################################
 //Interesse siden//-------------------------------------------*/
@@ -93,7 +89,6 @@ kategoriFilter = (k) => {
     if (x[i].className.indexOf(k) > -1) addClass(x[i], "bilde_vis");
   }
 };
-
 addClass = (element, navn) => {
   let i, arr1, arr2;
   arr1 = element.className.split(" ");
